@@ -1102,6 +1102,16 @@
 
 
     <script>
+        const lightMode = document.getElementById("lightMode");
+        const darkMode = document.getElementById("darkMode");
+
+        lightMode.addEventListener("click", function () {
+            document.documentElement.removeAttribute("data-theme");
+        });
+
+        darkMode.addEventListener("click", function () {
+            document.documentElement.setAttribute("data-theme", "dark");
+        });
         const contactForm = document.getElementById("contactForm");
         const submitButton = document.getElementById("submitButton");
         const successPopup = document.getElementById("successPopup");
