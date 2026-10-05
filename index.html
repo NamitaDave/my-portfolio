@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --card-color: #ffffff;
+    --secondary-text: #6c757d;
+    --border-color: #dee2e6;
+    --section-color: #f8f9fa;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --card-color: #1e1e1e;
+    --secondary-text: #bdbdbd;
+    --border-color: #444444;
+    --section-color: #181818;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sections */
+
+[data-theme="dark"] .bg-light {
+    background-color: var(--section-color) !important;
+}
+
+/* Cards */
+
+.card {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border-color: var(--border-color) !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Secondary text */
+
+.text-secondary {
+    color: var(--secondary-text) !important;
+}
+
+/* Borders */
+
+.border {
+    border-color: var(--border-color) !important;
+}
+
+/* Horizontal line */
+
+[data-theme="dark"] hr {
+    border-color: #555;
+}
+
+/* Form */
+
+.form-control {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.form-control:focus {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+.form-control::placeholder {
+    color: var(--secondary-text);
+}
+
+/* Navbar */
+
+/* Navbar */
+
+.navbar {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--text-color);
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+}
+
+[data-theme="dark"] .navbar .navbar-brand,
+[data-theme="dark"] .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .navbar .nav-link:hover {
+    color: #8ab4ff !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: #ffffff;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
+/* Footer */
+
+footer {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Dark mode buttons */
+
+[data-theme="dark"] .btn-outline-dark {
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+    background-color: #f5f5f5;
+    color: #121212;
+}
+
+</style>
+</head>
+
+
+
+   <body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a id="navbarBrand" class="navbar-brand" href="#">MyPortfolio</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <button id="lightMode" class="btn btn-light btn-sm">
+                             ☀️ Light
+                    </button>
+                </li>
+
+                <li class="nav-item ms-2">
+                    <button id="darkMode" class="btn btn-secondary btn-sm">
+                            🌙 Dark
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero -->
+    <section id="home">
+
+    <div class="container py-5">
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-8">
+
+                <p class="text-uppercase fw-semibold text-primary mb-2">
+                    Hello, I'm
+                </p>
+
+                <h1 class="display-1 fw-bold">Namita Dave</h1>
+
+                <h2 class="h3 text-secondary mb-4">
+                 Computer Engineering Student & Developer
+                </h2>
+
+                <p class="lead mb-4">
+                     I build practical software projects and enjoy solving problems through technology.
+                </p>
+
+                <a href="#projects" class="btn btn-primary btn-lg me-2">
+                         View My Work
+                </a>
+
+                <a href="#contact" class="btn btn-outline-dark btn-lg">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <p class="text-uppercase fw-semibold text-primary mb-2">
+                    About Me
+                </p>
+
+                <h2 class="display-5 fw-bold mb-4">
+                    Turning ideas into practical solutions.
+                </h2>
+
+                <p class="lead">
+                    I am a Computer Engineering student interested in
+                    software development, problem solving and building
+                    practical applications.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and applying them
+                    through academic projects and personal experiments.
+                    My goal is to continuously improve my technical skills
+                    while building useful and reliable software.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="row g-4">
+
+                    <div class="col-sm-6">
+                        <div class="p-4 border rounded-3 h-100">
+                            <h3 class="h5 fw-bold">
+                                Problem Solving
+                            </h3>
+
+                            <p class="mb-0 text-secondary">
+                                Interested in algorithms, data structures
+                                and logical problem solving.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="p-4 border rounded-3 h-100">
+                            <h3 class="h5 fw-bold">
+                                Development
+                            </h3>
+
+                            <p class="mb-0 text-secondary">
+                                Building web and software projects while
+                                exploring different technologies.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="p-4 border rounded-3 h-100">
+                            <h3 class="h5 fw-bold">
+                                Learning
+                            </h3>
+
+                            <p class="mb-0 text-secondary">
+                                Continuously learning through projects,
+                                coursework and experimentation.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="p-4 border rounded-3 h-100">
+                            <h3 class="h5 fw-bold">
+                                Technology
+                            </h3>
+
+                            <p class="mb-0 text-secondary">
+                                Exploring web development, programming
+                                and modern software tools.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Skills
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Technologies I Work With
+            </h2>
+
+            <p class="text-secondary">
+                A growing set of technologies and concepts I use
+                while learning and building projects.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- Programming -->
+            <div class="col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold mb-4">
+                            Programming
+                        </h3>
+
+                        <span class="badge text-bg-primary me-2 mb-2">
+                            C
+                        </span>
+
+                        <span class="badge text-bg-primary me-2 mb-2">
+                            Python
+                        </span>
+
+                        <span class="badge text-bg-primary me-2 mb-2">
+                            Java
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Web Development -->
+            <div class="col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold mb-4">
+                            Web Development
+                        </h3>
+
+                        <span class="badge text-bg-dark me-2 mb-2">
+                            HTML
+                        </span>
+
+                        <span class="badge text-bg-dark me-2 mb-2">
+                            CSS
+                        </span>
+
+                        <span class="badge text-bg-dark me-2 mb-2">
+                            Bootstrap
+                        </span>
+
+                        <span class="badge text-bg-dark me-2 mb-2">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Core Concepts -->
+            <div class="col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold mb-4">
+                            Core Concepts
+                        </h3>
+
+                        <span class="badge text-bg-secondary me-2 mb-2">
+                            Data Structures
+                        </span>
+
+                        <span class="badge text-bg-secondary me-2 mb-2">
+                            Algorithms
+                        </span>
+
+                        <span class="badge text-bg-secondary me-2 mb-2">
+                            DBMS
+                        </span>
+
+                        <span class="badge text-bg-secondary me-2 mb-2">
+                            Computer Networks
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tools -->
+            <div class="col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold mb-4">
+                            Tools & Platforms
+                        </h3>
+
+                        <span class="badge text-bg-success me-2 mb-2">
+                            Git
+                        </span>
+
+                        <span class="badge text-bg-success me-2 mb-2">
+                            GitHub
+                        </span>
+
+                        <span class="badge text-bg-success me-2 mb-2">
+                            VS Code
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Projects
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Things I've Built
+            </h2>
+
+            <p class="text-secondary">
+                A selection of academic and personal projects
+                developed while learning and experimenting with technology.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- Movie Theatre -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <div class="card-body p-4 d-flex flex-column">
+
+                        <span class="badge text-bg-primary align-self-start mb-3">
+                            C / DSA
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Movie Theatre Booking System
+                        </h3>
+
+                        <p class="text-secondary">
+                            A reservation system designed to manage movie
+                            theatre bookings and seat reservations using
+                            programming and data structure concepts.
+                        </p>
+
+                        <div class="mt-auto pt-3">
+
+                            <a href="https://github.com/NamitaDave/Movie-Booking-System" target="_blank" class="btn btn-outline-dark">
+    View Project
+</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Task Management -->            
+             <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <div class="card-body p-4 d-flex flex-column">
+
+                        <span class="badge text-bg-success align-self-start mb-3">
+                            Python / Flask
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Task Management Application
+                        </h3>
+
+                        <p class="text-secondary">
+                            A Flask-based task application that allows users
+                            to create and manage tasks using a simple web
+                            interface and SQLite database.
+                        </p>
+
+                        <div class="mt-auto pt-3">
+
+                            <a href="https://github.com/NamitaDave/my_first_web_app" target="_blank" class="btn btn-outline-dark">
+                                        View Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Java Chat -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <div class="card-body p-4 d-flex flex-column">
+
+                        <span class="badge text-bg-warning align-self-start mb-3">
+                            Java
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Java Chat Application
+                        </h3>
+
+                        <p class="text-secondary">
+                            A Java-based chat application created to
+                            explore socket communication and client-server
+                            interaction.
+                        </p>
+
+                        <div class="mt-auto pt-3">
+
+                            <a href="https://github.com/NamitaDave/Java-Chat-Application" target="_blank" class="btn btn-outline-dark">
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Google Clone -->
+            <div class="col-md-6">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <div class="card-body p-4 d-flex flex-column">
+
+                        <span class="badge text-bg-dark align-self-start mb-3">
+                            HTML / CSS / JavaScript
+                        </span>
+
+                        <h3 class="h4 fw-bold">
+                            Google Clone
+                        </h3>
+
+                        <p class="text-secondary">
+                            A front-end recreation inspired by the Google
+                            search interface, built to practice web
+                            development and responsive page design.
+                        </p>
+
+                        <div class="mt-auto pt-3">
+
+                            <a href="https://github.com/NamitaDave/Google_Clone" target="_blank" class="btn btn-outline-dark">
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Education -->
+<section id="education" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Education
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                My Academic Journey
+            </h2>
+
+            <p class="text-secondary">
+                My education and academic background in computer engineering.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <div class="d-flex flex-column flex-md-row
+                                    justify-content-between
+                                    align-items-md-start
+                                    gap-3">
+
+                            <div>
+
+                                <p class="text-primary fw-semibold mb-2">
+                                    Bachelor's Degree
+                                </p>
+
+                                <h3 class="h4 fw-bold mb-2">
+                                    Bachelor of Technology in Computer Engineering
+                                </h3>
+
+                                <p class="mb-1">
+                                    Indus University
+                                </p>
+
+                                <p class="text-secondary mb-0">
+                                    Institute of Technology & Engineering
+                                </p>
+
+                            </div>
+
+
+                            <span class="badge text-bg-dark align-self-md-start">
+                                B.Tech
+                            </span>
+
+                        </div>
+
+
+                        <hr class="my-4">
+
+
+                        <div class="row g-4">
+
+                            <div class="col-sm-4">
+
+                                <p class="text-secondary mb-1">
+                                    Current Level
+                                </p>
+
+                                <p class="fw-semibold mb-0">
+                                    Third Year
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-sm-4">
+
+                                <p class="text-secondary mb-1">
+                                    Semester
+                                </p>
+
+                                <p class="fw-semibold mb-0">
+                                    V Semester
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-sm-4">
+
+                                <p class="text-secondary mb-1">
+                                    Field
+                                </p>
+
+                                <p class="fw-semibold mb-0">
+                                    Computer Engineering
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact -->
+<section id="contact" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Contact
+            </p>
+
+            <h2 class="display-5 fw-bold">
+                Let's Connect
+            </h2>
+
+            <p class="text-secondary">
+                Have a question, project idea, or opportunity?
+                Feel free to get in touch.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Contact Information -->
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <h3 class="h4 fw-bold mb-4">
+                            Get In Touch
+                        </h3>
+
+                        <p class="text-secondary">
+                            I am always interested in learning,
+                            collaborating on projects, and exploring
+                            opportunities in software development.
+                        </p>
+
+
+                        <div class="mt-4">
+
+                            <p class="mb-2">
+                                <strong>Email</strong>
+                            </p>
+
+                            <a href="mailto:namitadave.24.cse@iite.indusuni.ac.in" class="text-secondary text-decoration-none">
+                                 namitadave.24.cse@iite.indusuni.ac.in
+                            </a>
+
+                        </div>
+
+
+                        <div class="mt-4">
+
+                            <p class="mb-2">
+                                <strong>Location</strong>
+                            </p>
+
+                            <p class="text-secondary">
+                                Ahmedabad, Gujarat, India
+                            </p>
+
+                        </div>
+
+
+                        <div class="mt-4">
+
+                            <p class="mb-2">
+                                <strong>Profiles</strong>
+                            </p>
+
+                            <a href="https://github.com/NamitaDave" target="_blank" class="btn btn-outline-dark btn-sm me-2">
+                                    GitHub
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/namita-dave-861362321/" target="_blank" class="btn btn-outline-primary btn-sm">
+                                LinkedIn
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+        <!-- Contact Form -->
+<div class="col-lg-7">
+
+    <div class="card border-0 shadow-sm">
+
+        <div class="card-body p-4 p-md-5">
+
+            <h3 class="h4 fw-bold mb-4">
+                Send a Message
+            </h3>
+
+            <form action="https://formsubmit.co/namitadave.24.cse@iite.indusuni.ac.in" method="POST">
+
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+                            <input type="hidden" name="_template" value="table">
+
+                             <input type="hidden" name="_captcha" value="false">
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+
+                        <label for="name" class="form-label">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <label for="subject" class="form-label">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="subject"
+                            name="subject"
+                            placeholder="What would you like to discuss?"
+                            required>
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Send Message
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>    
+
+<footer>
+    <div class="container">
+        <p class="mb-2 fw-semibold">
+            © 2026 Namita Dave
+        </p>
+
+        <p class="mb-0 text-secondary">
+            Computer Engineering Student & Developer
+        </p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const lightMode = document.getElementById("lightMode");
+    const darkMode = document.getElementById("darkMode");
+    
+    function setDarkMode() {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+}
+
+function setLightMode() {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+}
+
+
+    lightMode.addEventListener("click", function() {
+        setLightMode();
+    });
+
+
+    darkMode.addEventListener("click", function() {
+        setDarkMode();
+    });
+
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        setDarkMode();
+    } else {
+        setLightMode();
+    }
+</script>
+
+</body>
+
+
+</html>
